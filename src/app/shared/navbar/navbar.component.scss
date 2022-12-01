@@ -1,0 +1,22 @@
+@import "src/app/utilities/shared_variables.scss";
+.nav-bg-color {
+    background-color: #101357c4;
+    backdrop-filter: blur(5px);
+}
+
+.search-expand {
+    width: 600px;
+    transition: all .2s ease-in-out;
+}
+
+.search-collapse {
+    width: 200px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-avatar {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}

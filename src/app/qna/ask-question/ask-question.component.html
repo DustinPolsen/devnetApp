@@ -1,0 +1,51 @@
+<h2 class="mt-4 mx-4 pl-2">
+  Ask a Question
+</h2>
+
+<div class="mt-4 mx-4 px-2">
+  <div class="row">
+    <div class="col col-md-9">
+      <app-qna-editor [qnaRequest]="qnaObjToEdit" [editorMode]="editorMode" [editorType]="editorType"></app-qna-editor>
+    </div>
+    <div class="col col-md-3">
+      <div class="card">
+        <div class="card-header">
+          How to Format
+        </div>
+        <div class="card-body">
+          ► create code fences with backticks ` or tildes ~
+
+          ```
+          like so
+          ```
+          <hr>
+          ► add language identifier to highlight code
+
+          ```python
+          def function(foo):
+          print(foo)
+          ```
+          <hr>
+          ► put returns between paragraphs
+          <hr>
+          ► for linebreak add 2 spaces at end
+          <hr>
+          ► _italic_ or **bold**
+          <hr>
+          ► indent code by 4 spaces
+          <hr>
+          ► backtick escapes `like _so_`
+          <hr>
+          ► quote by placing > at start of line
+          <hr>
+          ► to make links (use https whenever possible)
+          <https: //example.com>
+            [example](https://example.com)
+            <a href="https://example.com">example</a>
+
+            formatting
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="p-3 col col-md-9">
+    <h3>Questions for you</h3>
+    <hr/>
+    <div *ngIf="loader" class="vertical-bars-loader"></div>
+    <app-question-list-view *ngIf="!loader && allQuestions" [questionList]="allQuestions"></app-question-list-view>
+    <div *ngIf="loader || !allQuestions" class="spinner-loader"></div>
+</div>
